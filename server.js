@@ -13,7 +13,7 @@ app.use('/auth', authRouter)
 
 
 
-mongoose.connect('mongodb+srv://bellaniramesh95:Ramesh1234@cluster0.acfampl.mongodb.net/?retryWrites=true&w=majority', {
+mongoose.connect(env.mongodb.URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(
